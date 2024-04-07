@@ -134,7 +134,7 @@ namespace Adaptive_TDP_Rework
             gfxUsage = _gfxUsage;
             cpuClock = _cpuClock;
             cpuUsage = _cpuUsage;
-            UpdateAvFps(_fps);
+            if (_fps > 0) UpdateAvFps(_fps);
         }
 
         //Calulate new TDP limit
